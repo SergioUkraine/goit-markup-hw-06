@@ -404,7 +404,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="join-box">
           <h3>Приєднуйтесь</h3>
           <ul class="social-link-list list">
             <li class="social-link-item">
@@ -453,15 +453,90 @@
             </li>
           </ul>
         </div>
+        <div>
+          <h3>Підпишіться на розсилку</h3>
+          <form class="subscribe-box">
+            <input
+              class="subscribe-input-email"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button" type="submit">Підписатися</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
-          <svg width="18px" height="18px">
+          <svg class="modal-close-image" width="18px" height="18px">
             <use href="./images/icons.svg#closex"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
+        <form class="modal-form">
+          <label class="modal-form-label" for="name">Ім'я</label>
+          <input
+            class="modal-inputs-common"
+            id="name"
+            type="text"
+            name="user-name"
+          />
+
+          <label class="modal-form-label" for="phone">Телефон</label>
+          <input
+            class="modal-inputs-common"
+            id="phone"
+            type="tel"
+            name="user-phone"
+          />
+
+          <label class="modal-form-label" for="email">Пошта</label>
+          <input
+            class="modal-inputs-common"
+            id="email"
+            type="email"
+            name="user-email"
+          />
+
+          <label class="modal-form-label" for="comment-input">Коментар</label>
+          <textarea
+            class="modal-inputs-common modal-textarea"
+            id="comment-input"
+            name="user-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <input
+            class="modal-check-input"
+            type="checkbox"
+            name="license"
+            id="license-terms"
+          />
+          <label class="modal-check-label" for="license-terms">
+            <span>
+              <svg
+                class="modal-checkbox-icon unchecked"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+              <svg
+                class="modal-checkbox-icon checked"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+          </label>
+
+          <button class="modal-submit-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
