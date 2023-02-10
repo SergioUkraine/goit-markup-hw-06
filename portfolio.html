@@ -291,7 +291,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="join-box">
           <h3>Приєднуйтесь</h3>
           <ul class="social-link-list list">
             <li class="social-link-item">
@@ -339,6 +339,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <h3><label for="subscribe-input">Підпишіться на розсилку</label></h3>
+          <form class="subscribe-form">
+            <input
+              id="subscribe-input"
+              name="subscriber-email"
+              class="subscribe-input-email"
+              type="email"
+              placeholder="E-mail"
+            />
+
+            <button class="subscribe-button" type="submit">
+              <span class="subscribe-button-text">Підписатися</span>
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
