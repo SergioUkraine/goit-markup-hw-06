@@ -212,7 +212,6 @@ header>.container {
 }
 
 
-
 /* Footer */
 .footer-wrap {
     background-color: var(--footer-hero-color);
@@ -227,7 +226,8 @@ header>.container {
     overflow: hidden;
 }
 
-.footer-title {
+.footer-join-title,
+.footer-subscribe-title {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -235,6 +235,10 @@ header>.container {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+}
+
+.footer-subscribe-title {
+    display: block;
 }
 
 .address-box {
@@ -329,6 +333,7 @@ header>.container {
 .subscribe-button-text {
     margin-right: 10px;
 }
+
 
 /* Main page (main) */
 /* Section 1 (Hero) */
@@ -602,8 +607,8 @@ header>.container {
     border-color: var(--accent-color);
 }
 
+
 /* Portfolio page (main) */
-/* Section 1 (Portfolio) */
 .portfolio img {
     display: block;
 }
