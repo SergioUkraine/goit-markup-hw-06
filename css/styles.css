@@ -955,6 +955,14 @@ header>.container {
     transition-timing-function: var(--animation-time-function);
 }
 
+.modal-checkbox-icon.unchecked {
+    fill: var(--primary-header-color);
+}
+
+.modal-check-input:focus+.modal-check-label .modal-checkbox-icon.unchecked {
+    fill: var(--accent-color);
+}
+
 .modal-checkbox-icon.checked {
     opacity: 0;
 }
