@@ -537,32 +537,36 @@
             name="user-comment"
             placeholder="Введіть текст"
           ></textarea>
+          <div class="modal-checkbox-box">
+            <input
+              id="license-checkbox"
+              class="modal-check-input"
+              name="license-confirm"
+              type="checkbox"
+            />
 
-          <input
-            id="license-checkbox"
-            class="modal-check-input"
-            name="license-confirm"
-            type="checkbox"
-          />
+            <label class="modal-check-label" for="license-checkbox">
+              <svg
+                class="modal-checkbox-icon unchecked"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+              <svg
+                class="modal-checkbox-icon checked"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
 
-          <label class="modal-check-label" for="license-checkbox">
-            <svg
-              class="modal-checkbox-icon unchecked"
-              width="18px"
-              height="18px"
-            >
-              <use href="./images/icons.svg#icon-unchecked"></use>
-            </svg>
-            <svg class="modal-checkbox-icon checked" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-checked"></use>
-            </svg>
-
-            <span class="checkbox-label-text"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="checkbox-label-link" href="#">Умови договору</a></span
-            >
-          </label>
-
+              <span class="checkbox-label-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="checkbox-label-link" href="#">Умови договору</a></span
+              >
+            </label>
+          </div>
           <button class="modal-submit-button" type="submit">Відправити</button>
         </form>
       </div>
