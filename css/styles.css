@@ -30,6 +30,7 @@
     --portfolio-example-overlay: rgba(33, 150, 243, 0.9);
     --backdrop-color: rgba(0, 0, 0, 0.2);
     --occupation-backdrop-color: rgba(47, 48, 58, 0.8);
+    --secondary-accent-color: #188CE8;
 
     /* Animation */
     --animation-duration: 250ms;
@@ -936,6 +937,14 @@ header>.container {
 
 .checkbox-label-link {
     color: var(--accent-color);
+    transition-property: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-time-function);
+}
+
+.checkbox-label-link:hover,
+.checkbox-label-link:focus {
+    color: var(--secondary-accent-color);
 }
 
 .modal-checkbox-icon {
@@ -949,8 +958,15 @@ header>.container {
     fill: var(--primary-header-color);
 }
 
-.modal-check-input:focus+.modal-check-label .modal-checkbox-icon.unchecked {
+.modal-checkbox-icon.checked {
     fill: var(--accent-color);
+}
+
+.modal-check-input:focus+.modal-check-label .modal-checkbox-icon.unchecked,
+.modal-check-input:focus+.modal-check-label .modal-checkbox-icon.checked,
+.modal-check-input:hover+.modal-check-label .modal-checkbox-icon.unchecked,
+.modal-check-input:hover+.modal-check-label .modal-checkbox-icon.checked {
+    fill: var(--secondary-accent-color);
 }
 
 .modal-checkbox-icon.checked {
@@ -988,6 +1004,7 @@ header>.container {
     transition-timing-function: var(--animation-time-function);
 }
 
-.modal-submit-button:hover {
-    background-color: #188CE8;
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+    background-color: var(--secondary-accent-color);
 }
