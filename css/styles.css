@@ -814,7 +814,8 @@ header>.container {
     transition-timing-function: var(--animation-time-function);
 }
 
-.modal-close-button:hover .modal-close-image {
+.modal-close-button:hover .modal-close-image,
+.modal-close-button:focus .modal-close-image {
     fill: var(--accent-color)
 }
 
