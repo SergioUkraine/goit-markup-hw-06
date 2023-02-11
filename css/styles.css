@@ -227,6 +227,16 @@ header>.container {
     overflow: hidden;
 }
 
+.footer-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
 .address-box {
     min-width: 231px;
     margin-right: 70px;
@@ -264,7 +274,7 @@ header>.container {
     margin-right: 93px;
 }
 
-.subscribe-form {
+.subscribe-box {
     display: flex;
 }
 
@@ -318,15 +328,6 @@ header>.container {
 
 .subscribe-button-text {
     margin-right: 10px;
-}
-
-.footer-wrap h3 {
-    margin-bottom: 20px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
 }
 
 /* Main page (main) */
